@@ -2,9 +2,13 @@
   "name": "tennisgame",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": "4.4.5",
+    "npm": "3.4.0"
+  },
   "scripts": {
     "start": "node ./bin/www",
-    "postinstall": "bower install"
+    "postinstall": "bower install && grunt build"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
